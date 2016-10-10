@@ -1,0 +1,7 @@
+{
+  "name": "portfolio 9",
+  "dependencies": {
+    "modernizr": "2",
+    "normalize-css": "normalize.css#^4.2.0"
+  }
+}
