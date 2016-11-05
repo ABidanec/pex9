@@ -62,6 +62,7 @@ button,
 button:active, 
 button:focus {
     outline: none;
+    cursor: pointer;
 }
 /* end none border focus in button*/
 
@@ -130,6 +131,11 @@ ul{
 						font-weight: 700;
 						padding: 44px 25px;
 					}
+						.b-top-menu__link:hover{
+							color: #ccc;
+						}
+
+
 		.b-top-search{
 			top: 29px;
 			right: -176px;
@@ -199,6 +205,14 @@ ul{
 				padding: 19px 50px;
 				border-radius: 50px;
 			}
+
+				.b-button:hover{
+					color: #8824cd;
+					background: #fff;
+				}
+
+
+
 			
 			.b-bottom-header__desc p{
 				font-size: 12px;
@@ -212,18 +226,220 @@ ul{
 	background: #2e3b4e;
 	color: #fff;
 }
+	.b-features:after{
+		position: absolute;
+		width: 141px;
+		height: 36px;
+		left: 50%;
+		margin: 0 0 0 -71px;
+		/*bottom: -36px;*/
+		/*background: #fff;*/
+		background: url("../img/bg-features-after.png") no-repeat;
+		z-index: 10;
+	}
+
+
+
+
 	.b-features_center{
 		min-width: 820px;
 		width: 70%;
+		padding: 78px 0 138px 0;
 	}
 
 	.b-features__item{
 		float: left;
 		width: 40%;
+		margin:2% 5%;
 	}
 		.b-features__head{
 			font-family: 'open_sansbold', 'open_sansregular', sans-serif;
 			text-transform: uppercase;
 			font-size: 15px;
+			margin:0 0 35px 0;
+		}
+
+		.b-features__item p{
+			line-height: 24px;
 		}
 /*end b-features*/
+
+/*b-works*/
+.b-works{
+	background: #e7526b url("../img/bg-works.png") no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 156px 0 192px 0;
+	color: #fff;
+}
+	.b-works__desc{
+		font-size: 13px;
+		width: 470px;
+		margin: 0 auto 30px;
+	}
+
+	.b-works__button{
+		background: #fff;
+		color:#e7526b;
+		border: 1px solid #fff;
+	}
+
+		.b-works__button:hover{
+			background: #e7526b;
+			color:#fff;
+		}
+/*end b-works*/
+
+/*b-about*/
+.b-about{
+	background: url("../img/bg-about.jpg") no-repeat center left;
+	padding: 93px 0 135px 0;
+}
+	.b-about__content{
+		padding: 0 0 0 35%;
+	}
+
+		.b-about__head{
+			text-transform: uppercase;
+			font-family: 'open_sansbold', sans-serif;
+			margin: 0 0 15px 0;
+		}
+
+		.b-about__desc{
+			font-size: 19px;
+			line-height: 25px;
+		}
+
+		.b-about__text{
+			line-height: 22px;
+		}
+/*end b-about*/
+
+/*b-faq*/
+.b-faq{
+	background: url("../img/bg-faq.jpg") no-repeat;
+	background-size: cover;
+}
+	.l-faq__mask{
+		text-align: center;
+		margin: 90px 0 0 0;
+		background: rgba(78, 34, 94, .8);
+		padding: 90px 0 115px 0;
+		color: #a87bb7;
+	}
+		.b-faq__head{
+			color: #fff;
+			font-family: 'open_sanslight', sans-serif;
+			font-size: 40px;
+			margin: 0 0 36px 0;
+		}
+
+		.b-faq__desc{
+			width: 740px;
+			margin: 0 auto 32px;
+			font-size: 20px;
+		}
+		
+		.b-faq__text{
+			font-size: 12px;
+			color: #fff;
+		}
+/*end b-faq*/
+
+/*b-photo*/
+.b-photo{
+	background: url("../img/bg-photo.jpg") no-repeat;
+	background-size: cover;
+	padding: 360px 0 85px 0;
+}
+
+	.b-button__photo{
+		background: none;
+		border: 1px solid #fff;
+		font-family: 'open_sansbold', sans-serif;
+		font-size: 13px;
+		padding: 12px 30px;
+		border-radius: 30px;
+		margin: 0 0 30px 0;
+	}
+		.b-button__photo:hover{
+			background: #fff;
+			color: #000;
+		}
+
+
+	.b-photo__cont{
+		color: #fff;
+		width: 44%;
+		left: 0;
+	}
+
+		.b-photo__slogan{
+			font-size: 40px;
+			margin: 0 0 30px 0;
+		}
+
+		.b-photo__user-portret{
+			float: left;
+			width: 48px;
+			height: 48px;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+
+		.b-photo__user-info{
+			padding: 1px 0 0 58px;
+		}
+/*end b-photo*/
+
+/*b-desc*/
+.b-desc{
+	background: url("../img/bg-desc.jpg") no-repeat center right;
+	padding: 110px 0 138px 0;
+}
+	.b-desc__content{
+		width: 56%;
+		left: 0;
+	}
+/*end b-desc*/
+
+/*b-contact*/
+.b-contact{
+	background: #e7526b;
+	min-height: 460px;
+}
+
+	.b-contact__content{
+		width: 34%;
+		margin: 72px 0 0 0;
+		color: #fff;
+	}
+		.b-contact__head{
+			text-transform: uppercase;
+			margin: 0 0 20px;
+		}
+
+		.b-contact__desc{
+			margin: 0 0 36px 0;
+		}
+		
+		.b-contact__item{
+			margin: 0 0 13px 0;
+		}
+
+
+
+			.b-contact__content a{
+				color: #fff;
+			}
+/*end b-contact*/
+
+.b-footer{
+	min-height: 367px;
+	background: #2e3b4e;
+}
+	.b-copyright{
+		margin: 44px 0 0 0;
+		color: #fff;
+	}
+
